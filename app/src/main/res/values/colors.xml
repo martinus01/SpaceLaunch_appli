@@ -3,4 +3,9 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="ColorMainText"></color>
+    <color name="ColorTitleText"></color>
+    <color name="ColorSplashText">#F44336</color>
+    <color name="ColorSplash2Text">#2D655F</color>
+    <color name="BackSplashScreen">#750000FF</color>
 </resources>
