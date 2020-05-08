@@ -1,0 +1,2 @@
+rootProject.name='SpaceLaunch_appli'
+include ':app'
