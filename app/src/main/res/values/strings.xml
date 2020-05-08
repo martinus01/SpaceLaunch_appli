@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">SpaceLaunch_appli</string>
     <string name="Splash_title">Space Launch</string>
-
+    <string name="home_title">Home</string>
+    <string name="launch_title">Launch</string>
+    <string name="imagery_title">Imagery</string>
+    <string name="vehicles_title">Vehicles</string>
 
 </resources>

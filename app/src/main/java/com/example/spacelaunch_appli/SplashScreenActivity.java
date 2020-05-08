@@ -14,7 +14,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        // rediriger ver sla page main_activity après 3 secondes.
+        // rediriger ver la page main_activity après 3 secondes.
         Runnable runnable= new Runnable() {
             @Override
             public void run() {
