@@ -30,3 +30,4 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     }
 }
+//TODO (possibilité d'afficher un message d'erreur si Pas de donnée
