@@ -13,5 +13,6 @@ public class VehiclesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vehicles);
 
+
     }
 }
