@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.example.spacelaunch_appli.ui.launch.LaunchActivity;
+
 public class SplashScreenActivity extends AppCompatActivity {
 
     private final int SPLASH_SCREEN_DELAY = 3000;
@@ -19,7 +21,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //demarer la page
-                Intent intent= new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent= new Intent(getApplicationContext(), LaunchActivity.class);
                 startActivity(intent);
                 finish();
             }
