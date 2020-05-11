@@ -1,6 +1,7 @@
 package com.example.spacelaunch_appli;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,113 +15,140 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import static java.lang.reflect.Array.getInt;
 import static java.lang.reflect.Array.set;
 
 public class infoLaunch extends AppCompatActivity {
 
 
-    private final String TIG = "information";
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_info);
-        Log.d(TIG, "onCreate:started");
-        getIncomingIntent();
-    }
 
 
-    private void set(String txtrocketname, String txtrocketconfig, String txtrocketfamilly, String txtrcname,
+/*
+    private void setter(String txtrocketname, String txtrocketconfiguration, String txtrocketfamilly, String txtrcname,
                      String txtrcabbrev, String txtcountrycode, String txtfuseeimage, String txtagenciesimage,
                      String txtmission, String txtwindowstart, String txtwindowend, String txtnet,
                      String txtlocation, String txtpadname, String txtlatitude, String txtlongitude,
                      String txtpadagencies, String txtmissionname, String txtdescription,
                      String txttypemission, String txtlspname, String txtlspabrrev,
                      String txtlspcountrycode, String txtagenciesname, String txtagenciesabbrev) {
+*/
+        Intent intent=getIntent();
 
+        String txtrocketname=intent.getStringExtra("rocketname");
+        String txtrocketconfiguration=intent.getStringExtra("rocketconfiguration");
+        String txtrocketfamilly=intent.getStringExtra("rocketfamilly");
+        String txtrcname=intent.getStringExtra("rcname");
+        String txtrcabbrev=intent.getStringExtra("rcabbrev");
+        String txtcountrycode=intent.getStringExtra("countrycode");
+        String txtfuseeimage=intent.getStringExtra("fuseeimage");
+        String txtagenciesimage=intent.getStringExtra("agenciesimage");
+        String txtmission=intent.getStringExtra("mission");
+        String txtwindowstart=intent.getStringExtra("windowstart");
+        String txtwindowend=intent.getStringExtra("windowend");
+        String txtnet=intent.getStringExtra("net");
+        String txtlocation=intent.getStringExtra("location");
+        String txtpadname=intent.getStringExtra("padname");
+        String txtlatitude=intent.getStringExtra("latitude");
+        String txtlongitude=intent.getStringExtra("longitude");
+        String txtpadagencies=intent.getStringExtra("padagencies");
+        String txtmissionname=intent.getStringExtra("missionname");
+        String txtdescription=intent.getStringExtra("description");
+        String txttypemission=intent.getStringExtra("typemission");
+        String txtlspname=intent.getStringExtra("lspname");
+        String txtlspcountrycode=intent.getStringExtra("lspcountrycode");
+        String txtagenciesname=intent.getStringExtra("agenciesname");
+        String txtlspabrrev=intent.getStringExtra("lspabrrev");
+        String txtagenciesabbrev=intent.getStringExtra("agenciesabbrev");
 
-        TextView padagencies = findViewById(R.id.padagencies);
+        TextView padagencies = (TextView)findViewById(R.id.padagencies);
         padagencies.setText(txtpadagencies);
 
-        TextView missionname = findViewById(R.id.missionname);
+        TextView missionname = (TextView)findViewById(R.id.missionname);
         missionname.setText(txtmissionname);
 
-        TextView description = findViewById(R.id.description);
+        TextView description = (TextView)findViewById(R.id.description);
         description.setText(txtdescription);
 
-        TextView typemission = findViewById(R.id.typemission);
+        TextView typemission = (TextView)findViewById(R.id.typemission);
         typemission.setText(txttypemission);
 
-        TextView lspname = findViewById(R.id.lspname);
+        TextView lspname = (TextView)findViewById(R.id.lspname);
         lspname.setText(txtlspname);
 
-        TextView lspabrrev = findViewById(R.id.lspabrrev);
+        TextView lspabrrev = (TextView)findViewById(R.id.lspabrrev);
         lspabrrev.setText(txtlspabrrev);
 
-        TextView lspcountrycode = findViewById(R.id.lspcountrycode);
+        TextView lspcountrycode =(TextView) findViewById(R.id.lspcountrycode);
         lspcountrycode.setText(txtlspcountrycode);
 
-        TextView agenciesname = findViewById(R.id.titre_agency);
+        TextView agenciesname = (TextView)findViewById(R.id.agenciesname);
         agenciesname.setText(txtagenciesname);
 
-        TextView agenciesabbrev = findViewById(R.id.agenciesabbrev);
+        TextView agenciesabbrev =(TextView) findViewById(R.id.agenciesabbrev);
         agenciesabbrev.setText(txtagenciesabbrev);
 
-        TextView location = findViewById(R.id.location);
+        TextView location =(TextView) findViewById(R.id.location);
         location.setText(txtlocation);
 
-        TextView padname = findViewById(R.id.padname);
+        TextView padname =(TextView) findViewById(R.id.padname);
         padname.setText(txtpadname);
 
-        TextView rocketfamilly = findViewById(R.id.rocketfamilyname);
+        TextView rocketfamilly =(TextView) findViewById(R.id.rocketfamilyname);
         rocketfamilly.setText(txtrocketfamilly);
 
-        TextView latitude = findViewById(R.id.latitude);
+        TextView latitude =(TextView) findViewById(R.id.latitude);
         latitude.setText(txtlatitude);
 
-        TextView rocketname = findViewById(R.id.rocketname);
+        TextView rocketname =(TextView) findViewById(R.id.rocketname);
         rocketname.setText(txtrocketname);
 
-        TextView rocketconfig = findViewById(R.id.rocketconfiguration);
-        rocketconfig.setText(txtrocketconfig);
+        TextView rocketconfiguration = (TextView)findViewById(R.id.rocketconfiguration);
+        rocketconfiguration.setText(txtrocketconfiguration);
 
-        TextView rcname = findViewById(R.id.rcname);
+        TextView rcname = (TextView)findViewById(R.id.rcname);
         rcname.setText(txtrcname);
 
-        TextView rcabbrev = findViewById(R.id.rcabbrev);
+        TextView rcabbrev = (TextView)findViewById(R.id.rcabbrev);
         rcabbrev.setText(txtrcabbrev);
 
-        TextView countrycode = findViewById(R.id.rccountrycode);
+        TextView countrycode = (TextView)findViewById(R.id.rccountrycode);
         countrycode.setText(txtcountrycode);
 
-        TextView mission = findViewById(R.id.missionname);
+        TextView mission = (TextView)findViewById(R.id.titre_mission);
         mission.setText(txtmission);
 
-        TextView windowstart = findViewById(R.id.windowstart);
+        TextView windowstart = (TextView)findViewById(R.id.windowstart);
         windowstart.setText(txtwindowstart);
 
-        TextView windowend = findViewById(R.id.windowend);
+        TextView windowend = (TextView)findViewById(R.id.windowend);
         windowend.setText(txtwindowend);
 
-        TextView net = findViewById(R.id.windownet);
+        TextView net = (TextView)findViewById(R.id.windownet);
         net.setText(txtnet);
 
-        TextView longitude = findViewById(R.id.longitude);
+        TextView longitude = (TextView)findViewById(R.id.longitude);
         longitude.setText(txtlongitude);
 
-        ImageView fuseeimage = findViewById(R.id.fusee_image);
+        ImageView fuseeimage = (ImageView)findViewById(R.id.fusee_image);
         Picasso.with(this)
                 .load(txtfuseeimage)
                 .into(fuseeimage);
 
-        ImageView agenciesimage = findViewById(R.id.agencies_image);
+        ImageView agenciesimage =  (ImageView)findViewById(R.id.agencies_image);
         Picasso.with(this)
                 .load(txtagenciesimage)
                 .into(agenciesimage);
 
-    }
 
+    }
+/*
     private void getIncomingIntent() {
         Log.d(TIG, "getIncommingIntent: checking for incomming intents.");
 
@@ -153,8 +181,9 @@ public class infoLaunch extends AppCompatActivity {
 
             Log.d(TIG, "getIncomingIntent: found intent extras");
             {
+
                 String txtrocketname=getIntent().getStringExtra("rocketname");
-                String txtrocketconfig=getIntent().getStringExtra("rocketconfig");
+                String txtrocketconfiguration=getIntent().getStringExtra("rocketconfiguration");
                 String txtrocketfamilly=getIntent().getStringExtra("rocketfamilly");
                 String txtrcname=getIntent().getStringExtra("rcname");
                 String txtrcabbrev=getIntent().getStringExtra("rcabbrev");
@@ -179,10 +208,34 @@ public class infoLaunch extends AppCompatActivity {
                 String txtlspabrrev=getIntent().getStringExtra("lspabrrev");
                 String txtagenciesabbrev=getIntent().getStringExtra("agenciesabbrev");
 
-
-                set(txtrocketname,txtrocketconfig,txtrocketfamilly,txtrcname,txtrcabbrev,txtcountrycode,txtfuseeimage,txtagenciesimage,txtmission,txtwindowstart,txtwindowend,txtnet,txtlocation,txtpadname,txtlatitude,txtlongitude,txtpadagencies,txtmissionname,txtdescription,txttypemission,txtlspname,txtlspabrrev,txtlspcountrycode,txtagenciesname,txtagenciesabbrev);
+/*
+                setter(txtrocketname,
+                        txtrocketconfiguration,
+                        txtrocketfamilly,
+                        txtrcname,
+                        txtrcabbrev,
+                        txtcountrycode,
+                        txtfuseeimage,
+                        txtagenciesimage,
+                        txtmission,
+                        txtwindowstart,
+                        txtwindowend,
+                        txtnet,
+                        txtlocation,
+                        txtpadname,
+                        txtlatitude,
+                        txtlongitude,
+                        txtpadagencies,
+                        txtmissionname,
+                        txtdescription,
+                        txttypemission,
+                        txtlspname,
+                        txtlspabrrev,
+                        txtlspcountrycode,
+                        txtagenciesname,
+                        txtagenciesabbrev);
             }
         }
-    }
+    }*/
 
 }
