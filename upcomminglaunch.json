@@ -30,7 +30,7 @@
       "lspname": "ExPace",
       "lspabbrev": "EP",
       "lspcountryCode": "CHN",
-      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "fuseeimage":"https://space.skyrocket.de/img_lau/kuaizhou-1a__1.jpg",
       "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
@@ -60,7 +60,7 @@
       "lspname": "United Launch Alliance",
       "lspabbrev": "ULA",
       "lspcountryCode": "USA",
-      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "fuseeimage":"https://www.americaspace.com/wp-content/uploads/2019/08/FB_IMG_1565215460588.jpg",
       "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
@@ -91,7 +91,7 @@
       "lspname": "SpaceX",
       "lspabbrev": "SpX",
       "lspcountryCode": "USA",
-      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "fuseeimage":"https://spacenews.com/wp-content/uploads/2018/05/f9-banga2-879x475.jpg",
       "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
@@ -133,7 +133,7 @@
       "net": "May 27, 2020 20:32:00 UTC",
       "location": "Kennedy Space Center, FL, USA",
       "countryCode": "USA",
-      "padame": "Launch Complex 39A, Kennedy Space Center, FL",
+      "padname": "Launch Complex 39A, Kennedy Space Center, FL",
       "latitude": 28.60822681,
       "longitude": -80.60428186,
       "padagencies":"inconnu pad agencies",
@@ -153,7 +153,7 @@
       "lspname": "SpaceX",
       "lspabbrev": "SpX",
       "lspcountryCode": "USA",
-      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "fuseeimage":"https://spacenews.com/wp-content/uploads/2018/05/f9-banga2-879x475.jpg",
       "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
@@ -184,7 +184,7 @@
       "lspname": "Virgin Orbit",
       "lspabbrev": "VO",
       "lspcountryCode": "USA",
-      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "fuseeimage":"https://space.skyrocket.de/img_lau/launcherone__7.jpg",
       "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
     },
     {
