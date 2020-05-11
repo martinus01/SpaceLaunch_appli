@@ -18,15 +18,11 @@ import java.util.List;
 public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
     private Context context;
     private List<Launch> values;
-    private OnItemClickListener listener;
+
     private ImageView fuseeimage;
 
 
-    public interface OnItemClickListener {
-        void onItemClick(Launch item);
 
-
-    }
     class ViewHolder extends RecyclerView.ViewHolder{
          TextView txtmission;
          TextView txtpad;
