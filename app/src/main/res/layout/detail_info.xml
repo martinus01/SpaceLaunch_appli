@@ -3,10 +3,83 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Colorfusee"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/Rocket_titre_section"
+        android:layout_width="386dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Rocket"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/mission_details_section"
+        android:layout_width="191dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/ColorSection"
+        android:text="mission details"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintEnd_toStartOf="@+id/emport_section"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fusee_image" />
+    <TextView
+        android:id="@+id/Statuts_titre_section"
+        android:layout_width="386dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Statuts"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintBottom_toTopOf="@+id/mission_details_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fusee_image"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/emport_section"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="12dp"
+        android:text="emport"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mission_details_section"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/agencies_section"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="agencies"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mission_details_section"
+        app:layout_constraintVertical_bias="0.142" />
+    <ImageView
+        android:id="@+id/agencies_image"
+        android:layout_width="156dp"
+        android:layout_height="138dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/agencies_section" />
     <ImageView
         android:id="@+id/fusee_image"
         android:layout_width="156dp"
@@ -18,7 +91,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Rocket_titre" />
+        app:layout_constraintTop_toBottomOf="@+id/Rocket_titre_section" />
 
     <TextView
         android:id="@+id/rocketname"
@@ -75,43 +148,25 @@
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
         app:layout_constraintTop_toBottomOf="@+id/rcabbrev" />
 
-    <TextView
-        android:id="@+id/Rocket_titre"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="16dp"
-        android:text="Rocket"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.072"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/Statuts_titre"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="16dp"
-        android:text="Statuts"
-        app:layout_constraintBottom_toTopOf="@+id/missiondetails"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.061"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fusee_image"
-        app:layout_constraintVertical_bias="0.0" />
+
+
 
     <TextView
         android:id="@+id/titre_mission"
         android:layout_width="190dp"
         android:layout_height="23dp"
+        android:text="titre_mission"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Statuts_titre" />
+        app:layout_constraintTop_toBottomOf="@+id/Statuts_titre_section" />
 
     <TextView
         android:id="@+id/windowstart"
         android:layout_width="190dp"
         android:layout_height="23dp"
+        android:text="windowstart"
         app:layout_constraintStart_toStartOf="@+id/titre_mission"
         app:layout_constraintTop_toBottomOf="@+id/titre_mission" />
 
@@ -119,6 +174,7 @@
         android:id="@+id/windowend"
         android:layout_width="190dp"
         android:layout_height="23dp"
+        android:text="windowend"
         app:layout_constraintStart_toStartOf="@+id/windowstart"
         app:layout_constraintTop_toBottomOf="@+id/windowstart" />
 
@@ -171,18 +227,7 @@
         app:layout_constraintStart_toStartOf="@+id/longitude"
         app:layout_constraintTop_toBottomOf="@+id/longitude" />
 
-    <TextView
-        android:id="@+id/missiondetails"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="120dp"
-        android:text="mission details"
-        app:layout_constraintEnd_toStartOf="@+id/emport"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fusee_image" />
+
 
     <TextView
         android:id="@+id/missionname"
@@ -190,8 +235,8 @@
         android:layout_height="23dp"
         android:layout_marginTop="8dp"
         android:text="missionname"
-        app:layout_constraintStart_toStartOf="@+id/missiondetails"
-        app:layout_constraintTop_toBottomOf="@+id/missiondetails" />
+        app:layout_constraintStart_toStartOf="@+id/mission_details_section"
+        app:layout_constraintTop_toBottomOf="@+id/mission_details_section" />
 
     <TextView
         android:id="@+id/description"
@@ -215,8 +260,8 @@
         android:layout_height="23dp"
         android:layout_marginTop="8dp"
         android:text="lspname"
-        app:layout_constraintStart_toStartOf="@+id/emport"
-        app:layout_constraintTop_toBottomOf="@+id/emport" />
+        app:layout_constraintStart_toStartOf="@+id/emport_section"
+        app:layout_constraintTop_toBottomOf="@+id/emport_section" />
 
     <TextView
         android:id="@+id/lspabrrev"
@@ -234,28 +279,7 @@
         app:layout_constraintStart_toStartOf="@+id/lspabrrev"
         app:layout_constraintTop_toBottomOf="@+id/lspabrrev" />
 
-    <TextView
-        android:id="@+id/emport"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:layout_marginEnd="12dp"
-        android:text="emport"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/missiondetails"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/agencies"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="84dp"
-        android:text="agencies"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/missiondetails"
-        app:layout_constraintVertical_bias="0.142" />
 
     <TextView
         android:id="@+id/textView28"
@@ -263,8 +287,8 @@
         android:layout_height="23dp"
         android:layout_marginTop="16dp"
         android:text="agenciesname"
-        app:layout_constraintStart_toStartOf="@+id/agencies"
-        app:layout_constraintTop_toBottomOf="@+id/agencies" />
+        app:layout_constraintStart_toStartOf="@+id/agencies_section"
+        app:layout_constraintTop_toBottomOf="@+id/agencies_section" />
 
     <TextView
         android:id="@+id/agenciesabbrev"
@@ -274,13 +298,6 @@
         app:layout_constraintStart_toStartOf="@+id/textView28"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
-    <ImageView
-        android:id="@+id/agencies_image"
-        android:layout_width="156dp"
-        android:layout_height="138dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/agencies" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
