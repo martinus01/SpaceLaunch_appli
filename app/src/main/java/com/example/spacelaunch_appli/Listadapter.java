@@ -19,16 +19,16 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
     private Context context;
     private List<Launch> values;
 
-    private ImageView fuseeimage;
 
 
 
     class ViewHolder extends RecyclerView.ViewHolder{
-         TextView txtmission;
-         TextView txtpad;
-         TextView txtagencies;
+             TextView txtmission;
+             TextView txtpad;
+             TextView txtagencies;
 
-        View layout;
+             ImageView fuseeimage;
+             View layout;
 
     ViewHolder(View v){
         super(v);
@@ -75,7 +75,7 @@ public Listadapter.ViewHolder onCreateViewHolder(
         holder.txtmission.setText(currentLaunch.getMission());
         holder.txtpad.setText(currentLaunch.getPadname());
         holder.txtagencies.setText(currentLaunch.getPadagencies());
-        Glide.with(context).load(values.get(position).getFuseeimage()).into(fuseeimage);
+        Glide.with(context).load(values.get(position).getFuseeimage()).into(holder.fuseeimage);
 
 
 
@@ -83,14 +83,34 @@ public Listadapter.ViewHolder onCreateViewHolder(
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(context,infoLaunch.class);
+
+                intent.putExtra("rocketname",currentLaunch.getRocketname());
+                intent.putExtra("rocketconfiguration",currentLaunch.getRocketconfiguration());
+                intent.putExtra("rocketfamilly",currentLaunch.getRocketfamilyname());
+                intent.putExtra("rcname",currentLaunch.getRcname());
+                intent.putExtra("rcabbrev",currentLaunch.getRcabbrev());
+                intent.putExtra("countrycode",currentLaunch.getCountryCode());
+                intent.putExtra("fuseeimage",currentLaunch.getFuseeimage());
+                intent.putExtra("agenciesimage",currentLaunch.getAgencyimage());
+                intent.putExtra("mission",currentLaunch.getMission());
                 intent.putExtra("windowstart",currentLaunch.getWindowstart());
                 intent.putExtra("windowend",currentLaunch.getWindowend());
-                intent.putExtra("windownet",currentLaunch.getNet());
-                intent.putExtra("mission",currentLaunch.getMission());
-                intent.putExtra("txtagenciesimage",currentLaunch.getAgencyimage());
-                intent.putExtra("txtfuseeimage",currentLaunch.getFuseeimage());
-                intent.putExtra("txtrocketname",currentLaunch.getRocketname());
-                intent.putExtra("txtrocketconfiguration",currentLaunch.getRocketconfiguration());
+                intent.putExtra("net",currentLaunch.getNet());
+                intent.putExtra("location",currentLaunch.getLocation());
+                intent.putExtra("padname",currentLaunch.getPadname());
+                intent.putExtra("latitude",currentLaunch.getLatitude());
+                intent.putExtra("longitude",currentLaunch.getLongitude());
+                intent.putExtra("padagencies",currentLaunch.getPadagencies());
+                intent.putExtra("missionname",currentLaunch.getMissionname());
+                intent.putExtra("description",currentLaunch.getDescription());
+                intent.putExtra("typemission",currentLaunch.getTypemission());
+                intent.putExtra("lspname",currentLaunch.getLspname());
+                intent.putExtra("lspcountrycode",currentLaunch.getLspcountryCode());
+                intent.putExtra("agenciesname",currentLaunch.getAgenciesname());
+                intent.putExtra("lspabrrev",currentLaunch.getLspabbrev());
+                intent.putExtra("agenciesabbrev",currentLaunch.getAgenciesabbrev());
+
+
 
 
                 context.startActivity(intent);

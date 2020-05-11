@@ -154,6 +154,7 @@
 
     <TextView
         android:id="@+id/titre_mission"
+        android:textSize="12dp"
         android:layout_width="190dp"
         android:layout_height="23dp"
         android:text="titre_mission"
@@ -235,6 +236,7 @@
         android:layout_height="23dp"
         android:layout_marginTop="8dp"
         android:text="missionname"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="@+id/mission_details_section"
         app:layout_constraintTop_toBottomOf="@+id/mission_details_section" />
 

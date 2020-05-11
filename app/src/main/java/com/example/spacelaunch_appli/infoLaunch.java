@@ -70,7 +70,7 @@ public class infoLaunch extends AppCompatActivity {
         TextView padagencies = (TextView)findViewById(R.id.padagencies);
         padagencies.setText(txtpadagencies);
 
-        TextView missionname = (TextView)findViewById(R.id.missionname);
+        TextView missionname = (TextView)findViewById(R.id.titre_mission);
         missionname.setText(txtmissionname);
 
         TextView description = (TextView)findViewById(R.id.description);
@@ -121,7 +121,7 @@ public class infoLaunch extends AppCompatActivity {
         TextView countrycode = (TextView)findViewById(R.id.rccountrycode);
         countrycode.setText(txtcountrycode);
 
-        TextView mission = (TextView)findViewById(R.id.titre_mission);
+        TextView mission = (TextView)findViewById(R.id.missionname);
         mission.setText(txtmission);
 
         TextView windowstart = (TextView)findViewById(R.id.windowstart);
