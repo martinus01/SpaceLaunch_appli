@@ -105,7 +105,6 @@
         android:layout_height="23dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="mission"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Statuts_titre" />
 
@@ -113,7 +112,6 @@
         android:id="@+id/windowstart"
         android:layout_width="190dp"
         android:layout_height="23dp"
-        android:text="windowstart"
         app:layout_constraintStart_toStartOf="@+id/titre_mission"
         app:layout_constraintTop_toBottomOf="@+id/titre_mission" />
 
@@ -121,7 +119,6 @@
         android:id="@+id/windowend"
         android:layout_width="190dp"
         android:layout_height="23dp"
-        android:text="windowend"
         app:layout_constraintStart_toStartOf="@+id/windowstart"
         app:layout_constraintTop_toBottomOf="@+id/windowstart" />
 

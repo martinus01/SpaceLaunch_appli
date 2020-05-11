@@ -93,6 +93,8 @@ public Listadapter.ViewHolder onCreateViewHolder(
                 intent.putExtra("mission",currentLaunch.getMission());
                 intent.putExtra("txtagenciesimage",currentLaunch.getAgencyimage());
                 intent.putExtra("txtfuseeimage",currentLaunch.getFuseeimage());
+                intent.putExtra("txtrocketname",currentLaunch.getRocketname());
+
 
 
                 context.startActivity(intent);
