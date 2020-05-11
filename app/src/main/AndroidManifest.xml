@@ -15,7 +15,8 @@
         <activity android:name=".ui.imagery.ImageryActivity"/>
         <activity android:name=".ui.home.HomeActivity" />
         <activity android:name=".ui.vehicules.VehiclesActivity" />
-        <activity android:name=".ui.launch.LaunchActivity" />
+        <activity android:name=".LaunchActivity" />
+        <activity android:name=".infoLaunch"/>
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

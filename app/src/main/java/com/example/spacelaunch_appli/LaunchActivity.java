@@ -1,4 +1,4 @@
-package com.example.spacelaunch_appli.ui.launch;
+package com.example.spacelaunch_appli;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -10,12 +10,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.example.spacelaunch_appli.Launch;
-import com.example.spacelaunch_appli.Launchlibrary;
-import com.example.spacelaunch_appli.Listadapter;
-import com.example.spacelaunch_appli.R;
-import com.example.spacelaunch_appli.RestLaunchResponse;
-import com.example.spacelaunch_appli.infoLaunch;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -31,7 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LaunchActivity extends AppCompatActivity {
 
-    private final String BASE_URL="https://raw.githubusercontent.com/martinus01/listfuser/master/";
+    private final String BASE_URL="https://raw.githubusercontent.com/martinus01/SpaceLaunch_appli/develop/";
     private RecyclerView recyclerView;
     private Listadapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -74,12 +68,7 @@ public class LaunchActivity extends AppCompatActivity {
         //context=context;
 
         // define an adapter
-        mAdapter = new Listadapter(launchlist, new Listadapter.OnItemClickListener() {
-            @Override
-            public void onItemClick(Launch item) {
-                navigatetoDetalails(item);
-            }
-        });
+        mAdapter = new Listadapter(launchlist,this);
         recyclerView.setAdapter(mAdapter);
     }
 
@@ -128,12 +117,7 @@ public class LaunchActivity extends AppCompatActivity {
     private void showError() {
         Toast.makeText(getApplicationContext(), "API Error", Toast.LENGTH_SHORT).show();
     }
-    private void navigatetoDetalails(Launch item) {
-        Intent myIntent=new Intent(LaunchActivity.this, infoLaunch.class);
-//        myIntent.putExtra("key",value);
-        LaunchActivity.this.startActivity(myIntent);
 
-    }
 
 }
 //todo LAUNCH PREVIUOUS AND NEXT

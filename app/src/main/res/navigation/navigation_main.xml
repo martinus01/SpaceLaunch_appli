@@ -7,7 +7,7 @@
 
     <activity
         android:id="@+id/launchActivity"
-        android:name="com.example.spacelaunch_appli.ui.launch.LaunchActivity"
+        android:name="com.example.spacelaunch_appli.LaunchActivity"
         android:label="activity_launch"
         tools:layout="@layout/activity_launch" />
     <activity

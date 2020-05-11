@@ -1,5 +1,7 @@
 package com.example.spacelaunch_appli;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,12 +10,17 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
-    private String context;
+    private Context context;
     private List<Launch> values;
     private OnItemClickListener listener;
+    private ImageView fuseeimage;
+
 
     public interface OnItemClickListener {
         void onItemClick(Launch item);
@@ -21,22 +28,20 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
 
     }
     class ViewHolder extends RecyclerView.ViewHolder{
+         TextView txtmission;
+         TextView txtpad;
+         TextView txtagencies;
 
-    TextView txtmission;
-    TextView txtfusee;
-    TextView txtagencies;
-    ImageView imageView;
-    View layout;
+        View layout;
 
     ViewHolder(View v){
         super(v);
         layout=v;
 
         txtmission=(TextView) v.findViewById(R.id.titre_mission);
-        txtfusee=(TextView) v.findViewById(R.id.titre_fusee);
+        txtpad=(TextView) v.findViewById(R.id.pad_name);
         txtagencies=(TextView)v.findViewById(R.id.titre_agency);
-        /*ImageView fuseeimage=v.findViewById(R.id.fusee_image);
-        Picasso.with(this).load(fuseeimage).into(fuseeimage);*/
+        fuseeimage=(ImageView)v.findViewById(R.id.fusee_image);
 
     }
 }
@@ -45,15 +50,11 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
         values.add(position, item);
         notifyItemInserted(position);
 }
-    public void remove(int position) {
-        values.remove(position);
-        notifyItemRemoved(position);
-    }
+
     // Provide a suitable constructor (depends on the kind of dataset)
-    public Listadapter(List<Launch> myDataset, OnItemClickListener listener) {
+    public Listadapter(List<Launch> myDataset,Context context) {
         this.values = myDataset;
-     //   this.context = context;
-        this.listener=listener;
+        this.context = context;
     }
 
 // Create new views (invoked by the layout manager)
@@ -76,25 +77,33 @@ public Listadapter.ViewHolder onCreateViewHolder(
         // - replace the contents of the view with that element
         final Launch currentLaunch = values.get(position);
         holder.txtmission.setText(currentLaunch.getMission());
-        holder.txtfusee.setText(currentLaunch.getWindowstart());
+        holder.txtpad.setText(currentLaunch.getPadname());
         holder.txtagencies.setText(currentLaunch.getPadagencies());
-        //Picasso.with(this).load(values.get(position).getFuseeimage()).into(imageView);
+        Glide.with(context).load(values.get(position).getFuseeimage()).into(fuseeimage);
 
 
 
         holder.txtmission.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*remove(position);*/
-                listener.onItemClick(currentLaunch);
-            }
+                Intent intent=new Intent(context,infoLaunch.class);
+                intent.putExtra("windowstart",currentLaunch.getWindowstart());
+                intent.putExtra("windowend",currentLaunch.getWindowend());
+                intent.putExtra("windownet",currentLaunch.getNet());
+                intent.putExtra("mission",currentLaunch.getMission());
+                intent.putExtra("txtagenciesimage",currentLaunch.getAgencyimage());
+                intent.putExtra("txtfuseeimage",currentLaunch.getFuseeimage());
+
+
+                context.startActivity(intent);
+                /*
+                    Intent myIntent=new Intent(LaunchActivity.this, infoLaunch.class);
+                     myIntent.putExtra("key",value);
+                    LaunchActivity.this.startActivity(myIntent);
+*/
+                }
         });
 
-       /* holder.txtmission.setOnClickListener(new View.OnClickListener() {
-            @Override public void onClick(View v) {
-                listener.onItemClick(currentLaunch);
-            }
-        });*/
     }
 
     // Return the size of your dataset (invoked by the layout manager)

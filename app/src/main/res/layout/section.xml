@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="136dp"
     android:padding="6dip"
-    android:background="@color/colorPrimary">
+    android:background="@color/Colorfusee">
 
     <ImageView
         android:id="@+id/fusee_image"
@@ -22,7 +22,7 @@
         android:background="@color/Colorfusee"
         android:layout_height="36dp"
         android:layout_alignWithParentIfMissing="true"
-        android:layout_above="@+id/titre_fusee"
+        android:layout_above="@+id/pad_name"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="6dp"
@@ -36,24 +36,24 @@
 
     <TextView
         android:id="@+id/titre_agency"
-        android:layout_width="294dp"
-        android:layout_height="30dp"
+        android:layout_width="291dp"
+        android:layout_height="33dp"
         android:layout_alignParentEnd="true"
-        android:background="@color/ColorAgency"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="7dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="21dp"
         android:layout_toRightOf="@+id/fusee_image"
+        android:background="@color/Colorfusee"
         android:singleLine="true"
         android:text="agency"
         android:textSize="12sp" />
 
     <TextView
-        android:id="@+id/titre_fusee"
+        android:id="@+id/pad_name"
         android:layout_width="wrap_content"
         android:layout_height="31dp"
-        android:background="@color/ColorAgency"
+        android:background="@color/Colorfusee"
         android:layout_above="@+id/titre_agency"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="6dp"
