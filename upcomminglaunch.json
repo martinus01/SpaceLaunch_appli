@@ -310,7 +310,7 @@
       "lspcountryCode": "IND",
       "fuseeimage":"https://i.pinimg.com/originals/8b/79/20/8b7920667a49960d7ef06795001cfd88.gif",
       "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
-    }
+    },
         {
       "mission":"PSLV  | RISAT-1A",
       "windowstart": "May 31, 2020 00:00:00 UTC",
@@ -372,7 +372,7 @@
       "lspcountryCode":"USA",
       "fuseeimage":"https://statics.lesinrocks.com/content/thumbs/uploads/2013/11/width-1125-height-612-quality-10/bob.jpg",
       "agencyimage":"https://statics.lesinrocks.com/content/thumbs/uploads/2013/11/width-1125-height-612-quality-10/bob.jpg"
-},
+}
   ]
 
 }
