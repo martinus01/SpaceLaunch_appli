@@ -73,10 +73,10 @@ public class infoLaunch extends AppCompatActivity {
         TextView missionname = (TextView)findViewById(R.id.titre_mission);
         missionname.setText(txtmissionname);
 
-        TextView description = (TextView)findViewById(R.id.description);
+        TextView description = (TextView)findViewById(R.id.typemission);
         description.setText(txtdescription);
 
-        TextView typemission = (TextView)findViewById(R.id.typemission);
+        TextView typemission = (TextView)findViewById(R.id.description);
         typemission.setText(txttypemission);
 
         TextView lspname = (TextView)findViewById(R.id.lspname);
