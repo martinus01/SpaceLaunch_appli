@@ -20,7 +20,7 @@
         android:id="@+id/titre_mission"
         android:layout_width="wrap_content"
         android:background="@color/Colorfusee"
-        android:layout_height="36dp"
+        android:layout_height="16dp"
         android:layout_alignWithParentIfMissing="true"
         android:layout_above="@+id/pad_name"
         android:layout_alignParentTop="true"
@@ -31,7 +31,7 @@
         android:layout_marginBottom="6dp"
         android:layout_toRightOf="@id/fusee_image"
         android:gravity="center_vertical"
-        android:text="Example application"
+        android:text="titre_mission"
         />
 
     <TextView
@@ -51,15 +51,15 @@
 
     <TextView
         android:id="@+id/pad_name"
-        android:layout_width="wrap_content"
-        android:layout_height="31dp"
-        android:background="@color/Colorfusee"
+        android:layout_width="289dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/titre_agency"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="6dp"
-        android:layout_marginRight="6dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
         android:layout_toRightOf="@id/fusee_image"
+        android:background="@color/Colorfusee"
         android:ellipsize="marquee"
         android:singleLine="true"
         android:text="Description"

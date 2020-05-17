@@ -24,7 +24,7 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
 
     class ViewHolder extends RecyclerView.ViewHolder{
              TextView txtmission;
-             TextView txtpad;
+             TextView txtnet;
              TextView txtagencies;
 
              ImageView fuseeimage;
@@ -35,7 +35,7 @@ public class Listadapter extends RecyclerView.Adapter<Listadapter.ViewHolder> {
         layout=v;
 
         txtmission=(TextView) v.findViewById(R.id.titre_mission);
-        txtpad=(TextView) v.findViewById(R.id.pad_name);
+        txtnet=(TextView) v.findViewById(R.id.pad_name);
         txtagencies=(TextView)v.findViewById(R.id.titre_agency);
         fuseeimage=(ImageView)v.findViewById(R.id.fusee_image);
 
@@ -73,7 +73,7 @@ public Listadapter.ViewHolder onCreateViewHolder(
         // - replace the contents of the view with that element
         final Launch currentLaunch = values.get(position);
         holder.txtmission.setText(currentLaunch.getMission());
-        holder.txtpad.setText(currentLaunch.getPadname());
+        holder.txtnet.setText(currentLaunch.getNet());
         holder.txtagencies.setText(currentLaunch.getPadagencies());
         Glide.with(context).load(values.get(position).getFuseeimage()).into(holder.fuseeimage);
 
