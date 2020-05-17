@@ -11,7 +11,10 @@ Appel WebService à une API Rest.
 Stockage de données en cache
 ## Screens
 <p align="center">
-  chelou
+  screen de la liste des decollage a venir
   </p>
   <p align="center">
 <img src="screenAppli/Screenshot_20200517-200949025.jpg" width="200" height="350" />  </p>
+pour ouvrir la page detail il faut appuyer sur l'image de la Fusée
+ <p align="center">
+<img src="screenAppli/Screenshot_20200517-200956885.jpg" width="200" height="350" />  </p>
