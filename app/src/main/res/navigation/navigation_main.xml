@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/launchActivity">
+
+    <activity
+        android:id="@+id/launchActivity"
+        android:name="com.example.spacelaunch_appli.LaunchActivity"
+        android:label="activity_launch"
+        tools:layout="@layout/activity_launch" />
+    <activity
+        android:id="@+id/vehiculesActivity"
+        android:name="com.example.spacelaunch_appli.ui.vehicules.VehiclesActivity"
+        android:label="activity_vehicules"
+        tools:layout="@layout/activity_vehicles" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.spacelaunch_appli.ui.home.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <activity
+        android:id="@+id/imageryActivity"
+        android:name="com.example.spacelaunch_appli.ui.imagery.ImageryActivity"
+        android:label="activity_imagery"
+        tools:layout="@layout/activity_imagery" />
+</navigation>

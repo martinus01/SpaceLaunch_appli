@@ -8,18 +8,18 @@ import android.os.Handler;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private final int SPLASH_SCREEN_DELAY = 3000;
+    private final int SPLASH_SCREEN_DELAY = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        // rediriger ver sla page main_activity après 3 secondes.
+        // rediriger ver la page main_activity après 1 secondes.
         Runnable runnable= new Runnable() {
             @Override
             public void run() {
                 //demarer la page
-                Intent intent= new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent= new Intent(getApplicationContext(), LaunchActivity.class);
                 startActivity(intent);
                 finish();
             }

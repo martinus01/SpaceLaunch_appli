@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Colorfusee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Rocket_titre_section"
+        android:layout_width="386dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Rocket"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mission_details_section"
+        android:layout_width="191dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/ColorSection"
+        android:text="mission details"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintEnd_toStartOf="@+id/emport_section"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fusee_image" />
+    <TextView
+        android:id="@+id/Statuts_titre_section"
+        android:layout_width="386dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Statuts"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintBottom_toTopOf="@+id/mission_details_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fusee_image"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/emport_section"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="12dp"
+        android:text="emport"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mission_details_section"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/agencies_section"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="84dp"
+        android:text="agencies"
+        android:background="@color/ColorSection"
+        android:textColor="@color/colorsectiontxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mission_details_section"
+        app:layout_constraintVertical_bias="0.142" />
+    <ImageView
+        android:id="@+id/agencies_image"
+        android:layout_width="156dp"
+        android:layout_height="138dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/agencies_section" />
+    <ImageView
+        android:id="@+id/fusee_image"
+        android:layout_width="156dp"
+        android:layout_height="138dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="12dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rocket_titre_section" />
+
+    <TextView
+        android:id="@+id/rocketname"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="rocketname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fusee_image"
+        app:layout_constraintTop_toTopOf="@+id/fusee_image" />
+
+    <TextView
+        android:id="@+id/rocketconfiguration"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="rocketconfiguration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fusee_image"
+        app:layout_constraintTop_toBottomOf="@+id/rocketname" />
+
+    <TextView
+        android:id="@+id/rocketfamilyname"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="rocketfamilyname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fusee_image"
+        app:layout_constraintTop_toBottomOf="@+id/rocketconfiguration" />
+
+    <TextView
+        android:id="@+id/rcname"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="rcname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fusee_image"
+        app:layout_constraintTop_toBottomOf="@+id/rocketfamilyname" />
+
+    <TextView
+        android:id="@+id/rcabbrev"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="rcabbrev"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fusee_image"
+        app:layout_constraintTop_toBottomOf="@+id/rcname" />
+
+    <TextView
+        android:id="@+id/rccountrycode"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="rccountrycode"
+        app:layout_constraintBottom_toBottomOf="@+id/fusee_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fusee_image"
+        app:layout_constraintTop_toBottomOf="@+id/rcabbrev" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/titre_mission"
+        android:textSize="12dp"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="titre_mission"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Statuts_titre_section" />
+
+    <TextView
+        android:id="@+id/windowstart"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="windowstart"
+        app:layout_constraintStart_toStartOf="@+id/titre_mission"
+        app:layout_constraintTop_toBottomOf="@+id/titre_mission" />
+
+    <TextView
+        android:id="@+id/windowend"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="windowend"
+        app:layout_constraintStart_toStartOf="@+id/windowstart"
+        app:layout_constraintTop_toBottomOf="@+id/windowstart" />
+
+    <TextView
+        android:id="@+id/windownet"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="windownet"
+        app:layout_constraintStart_toStartOf="@+id/windowend"
+        app:layout_constraintTop_toBottomOf="@+id/windowend" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:text="location"
+        app:layout_constraintStart_toEndOf="@+id/titre_mission"
+        app:layout_constraintTop_toTopOf="@+id/titre_mission" />
+
+    <TextView
+        android:id="@+id/padname"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="padname"
+        app:layout_constraintStart_toStartOf="@+id/location"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="latitude"
+        app:layout_constraintStart_toStartOf="@+id/padname"
+        app:layout_constraintTop_toBottomOf="@+id/padname" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="longitude"
+        app:layout_constraintStart_toStartOf="@+id/latitude"
+        app:layout_constraintTop_toBottomOf="@+id/latitude" />
+
+    <TextView
+        android:id="@+id/padagencies"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="padagencies"
+        app:layout_constraintStart_toStartOf="@+id/longitude"
+        app:layout_constraintTop_toBottomOf="@+id/longitude" />
+
+
+
+    <TextView
+        android:id="@+id/missionname"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="missionname"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/mission_details_section"
+        app:layout_constraintTop_toBottomOf="@+id/mission_details_section" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="description"
+        app:layout_constraintStart_toStartOf="@+id/missionname"
+        app:layout_constraintTop_toBottomOf="@+id/missionname" />
+
+    <TextView
+        android:id="@+id/typemission"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="typemission"
+        app:layout_constraintStart_toStartOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/lspname"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:text="lspname"
+        app:layout_constraintStart_toStartOf="@+id/emport_section"
+        app:layout_constraintTop_toBottomOf="@+id/emport_section" />
+
+    <TextView
+        android:id="@+id/lspabrrev"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="lspabrrev"
+        app:layout_constraintStart_toStartOf="@+id/lspname"
+        app:layout_constraintTop_toBottomOf="@+id/lspname" />
+
+    <TextView
+        android:id="@+id/lspcountrycode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lspcountrycode"
+        app:layout_constraintStart_toStartOf="@+id/lspabrrev"
+        app:layout_constraintTop_toBottomOf="@+id/lspabrrev" />
+
+
+
+    <TextView
+        android:id="@+id/agenciesname"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:text="agenciesname"
+        app:layout_constraintStart_toStartOf="@+id/agencies_section"
+        app:layout_constraintTop_toBottomOf="@+id/agencies_section" />
+
+    <TextView
+        android:id="@+id/agenciesabbrev"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:text="agenciesabbrev"
+        app:layout_constraintStart_toStartOf="@+id/agenciesname"
+        app:layout_constraintTop_toBottomOf="@+id/agenciesname" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
