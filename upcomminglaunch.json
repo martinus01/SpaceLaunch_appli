@@ -31,7 +31,7 @@
       "lspabbrev": "EP",
       "lspcountryCode": "CHN",
       "fuseeimage":"https://space.skyrocket.de/img_lau/kuaizhou-1a__1.jpg",
-      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
+      "agencyimage": "https://ih0.redbubble.net/image.972431806.4354/flat,550x550,075,f.u2.jpg"
     },
     {
       "mission": "Atlas V 501 | OTV-6 (X-37B) (USSF-7)",
@@ -61,7 +61,7 @@
       "lspabbrev": "ULA",
       "lspcountryCode": "USA",
       "fuseeimage":"https://www.americaspace.com/wp-content/uploads/2019/08/FB_IMG_1565215460588.jpg",
-      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
+      "agencyimage": "https://yt3.ggpht.com/a/AGF-l780lRAz_LLrQItL8xMZeDQ2bqJapqDNgekC4g=s900-c-k-c0xffffffff-no-rj-mo"
     },
     {
       "mission": "Falcon 9 Block 5 | Starlink 7",
@@ -92,7 +92,7 @@
       "lspabbrev": "SpX",
       "lspcountryCode": "USA",
       "fuseeimage":"https://spacenews.com/wp-content/uploads/2018/05/f9-banga2-879x475.jpg",
-      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
+      "agencyimage": "https://cdn.1min30.com/wp-content/uploads/2018/05/Logo-SpaceX-1.jpg"
     },
     {
 
@@ -116,7 +116,7 @@
       "rccountryCode":"inconnu",
       "missionname": "Kounotori 9 (HTV-9)",
       "description": "Uncrewed cargo resupply mission to International Space Station.",
-      "typeName": "Resupply",
+      "typemission": "Resupply",
       "agenciesname": "Japan Aerospace Exploration Agency",
       "agenciesabbrev": "JAXA",
       "agenciescountryCode": "JPN",
@@ -154,7 +154,7 @@
       "lspabbrev": "SpX",
       "lspcountryCode": "USA",
       "fuseeimage":"https://spacenews.com/wp-content/uploads/2018/05/f9-banga2-879x475.jpg",
-      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
+      "agencyimage": "https://cdn.1min30.com/wp-content/uploads/2018/05/Logo-SpaceX-1.jpg"
     },
     {
       "mission": "LauncherOne | Test Flight",
