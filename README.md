@@ -9,5 +9,9 @@ Ecran avec une liste d’éléments.
 Ecran avec le détail d’un élément.
 Appel WebService à une API Rest.
 Stockage de données en cache
-
-<img src="screenAppli/Screenshot_20200517-200949025.jpg" width="200" height="350" />
+## Screens
+<p align="center">
+  chelou
+  </p>
+  <p align="center">
+<img src="screenAppli/Screenshot_20200517-200949025.jpg" width="200" height="350" />  </p>
