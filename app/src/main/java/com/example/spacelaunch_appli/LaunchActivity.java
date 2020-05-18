@@ -24,7 +24,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LaunchActivity extends AppCompatActivity {
-
+//activité principal
 
     private final String BASE_URL="https://raw.githubusercontent.com/martinus01/SpaceLaunch_appli/develop/";
     private RecyclerView recyclerView;
