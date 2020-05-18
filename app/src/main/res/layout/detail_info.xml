@@ -241,9 +241,9 @@
     <TextView
         android:id="@+id/padagencies"
         android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:textSize="12dp"
+        android:layout_height="28dp"
         android:text="padagencies"
+        android:textSize="12dp"
         app:layout_constraintStart_toStartOf="@+id/longitude"
         app:layout_constraintTop_toBottomOf="@+id/longitude" />
 
