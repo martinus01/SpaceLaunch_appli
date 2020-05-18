@@ -27,3 +27,9 @@ localisation du pad de tire et de l'agence acteur du tire
 ### Icone de l'application
  <p align="center">
  <img src="screenAppli/List_icon.jpg" width="200" height="250" />  </p>
+
+
+
+
+### complement
+le code principal est dans Launchactivity
