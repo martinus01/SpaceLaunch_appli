@@ -7,6 +7,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fond_detail" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="408dp"
+        android:layout_height="729dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colordetailfond"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+
+
+
     <TextView
         android:id="@+id/Rocket_titre_section"
         android:layout_width="386dp"
@@ -108,6 +139,7 @@
         android:layout_height="23dp"
         android:layout_marginEnd="8dp"
         android:text="rocketname"
+        android:textColor="@color/colordetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
         app:layout_constraintTop_toTopOf="@+id/fusee_image" />
@@ -117,6 +149,7 @@
         android:layout_width="190dp"
         android:layout_height="23dp"
         android:text="rocketconfiguration"
+        android:textColor="@color/colordetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
         app:layout_constraintTop_toBottomOf="@+id/rocketname" />
@@ -126,6 +159,7 @@
         android:layout_width="190dp"
         android:layout_height="23dp"
         android:text="rocketfamilyname"
+        android:textColor="@color/colordetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
         app:layout_constraintTop_toBottomOf="@+id/rocketconfiguration" />
@@ -135,7 +169,9 @@
         android:layout_width="190dp"
         android:layout_height="23dp"
         android:text="rcname"
+        android:textColor="@color/colordetail"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
         app:layout_constraintTop_toBottomOf="@+id/rocketfamilyname" />
 
@@ -144,6 +180,7 @@
         android:layout_width="190dp"
         android:layout_height="23dp"
         android:text="rcabbrev"
+        android:textColor="@color/colordetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
         app:layout_constraintTop_toBottomOf="@+id/rcname" />
@@ -153,6 +190,7 @@
         android:layout_width="190dp"
         android:layout_height="23dp"
         android:text="rccountrycode"
+        android:textColor="@color/colordetail"
         app:layout_constraintBottom_toBottomOf="@+id/fusee_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
@@ -166,6 +204,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:text="titre_mission"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Statuts_titre_section" />
@@ -177,6 +216,7 @@
         android:layout_height="23dp"
         android:layout_marginStart="0dp"
         android:text="windowstart"
+        android:textColor="@color/colordetail"
         app:layout_constraintStart_toStartOf="@+id/titre_mission"
         app:layout_constraintTop_toBottomOf="@+id/titre_mission" />
 
@@ -187,6 +227,7 @@
         android:layout_marginStart="0dp"
         android:textSize="12dp"
         android:text="windowend"
+        android:textColor="@color/colordetail"
         app:layout_constraintStart_toStartOf="@+id/windowstart"
         app:layout_constraintTop_toBottomOf="@+id/windowstart" />
 
@@ -196,6 +237,7 @@
         android:layout_height="23dp"
         android:textSize="12dp"
         android:text="windownet"
+        android:textColor="@color/colordetail"
         android:layout_marginStart="0dp"
         app:layout_constraintStart_toStartOf="@+id/windowend"
         app:layout_constraintTop_toBottomOf="@+id/windowend" />
@@ -206,6 +248,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="12dp"
         android:text="location"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintStart_toEndOf="@+id/titre_mission"
         app:layout_constraintTop_toTopOf="@+id/titre_mission" />
@@ -215,6 +258,7 @@
         android:layout_width="187dp"
         android:layout_height="32dp"
         android:text="padname"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintStart_toStartOf="@+id/location"
         app:layout_constraintTop_toBottomOf="@+id/location" />
@@ -225,6 +269,7 @@
         android:layout_height="23dp"
         android:textSize="12dp"
         android:text="latitude"
+        android:textColor="@color/colordetail"
         app:layout_constraintStart_toStartOf="@+id/padname"
         app:layout_constraintTop_toBottomOf="@+id/padname" />
 
@@ -234,6 +279,7 @@
         android:layout_height="23dp"
         android:textSize="12dp"
         android:text="longitude"
+        android:textColor="@color/colordetail"
         app:layout_constraintStart_toStartOf="@+id/latitude"
         app:layout_constraintTop_toBottomOf="@+id/latitude" />
 
@@ -242,6 +288,7 @@
         android:layout_width="190dp"
         android:layout_height="28dp"
         android:text="padagencies"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintStart_toStartOf="@+id/longitude"
         app:layout_constraintTop_toBottomOf="@+id/longitude" />
@@ -253,6 +300,7 @@
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
         android:text="missionname"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mission_details_section" />
@@ -263,6 +311,7 @@
         android:layout_height="23dp"
         android:layout_marginStart="16dp"
         android:text="description"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/missionname"
         app:layout_constraintHorizontal_bias="0.0"
@@ -275,6 +324,7 @@
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
         android:text="typemission"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/missionname"
         app:layout_constraintHorizontal_bias="1.0"
@@ -288,6 +338,7 @@
         android:layout_height="35dp"
         android:layout_marginStart="12dp"
         android:text="lspname"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintStart_toEndOf="@+id/missionname"
         app:layout_constraintTop_toBottomOf="@+id/emport_section" />
@@ -298,6 +349,7 @@
         android:layout_height="23dp"
         android:layout_marginStart="12dp"
         android:text="lspabrrev"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintStart_toEndOf="@+id/description"
         app:layout_constraintTop_toBottomOf="@+id/lspname" />
@@ -308,6 +360,7 @@
         android:layout_height="33dp"
         android:layout_marginStart="8dp"
         android:text="lspcountrycode"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="@+id/lspabrrev"
         app:layout_constraintHorizontal_bias="1.0"
@@ -319,6 +372,7 @@
         android:layout_width="190dp"
         android:layout_height="33dp"
         android:text="agenciesname"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintBottom_toTopOf="@+id/agenciesabbrev"
         app:layout_constraintStart_toStartOf="@+id/agencies_section"
@@ -330,6 +384,7 @@
         android:layout_width="190dp"
         android:layout_height="23dp"
         android:text="agenciesabbrev"
+        android:textColor="@color/colordetail"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/agencies_image"
@@ -337,6 +392,7 @@
         app:layout_constraintStart_toStartOf="@+id/agenciesname"
         app:layout_constraintTop_toBottomOf="@+id/agencies_section"
         app:layout_constraintVertical_bias="0.217" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
