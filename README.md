@@ -18,8 +18,9 @@ localisation du pad de tire et de l'agence acteur du tire
 <img src="screenAppli/List_lancement.jpg" width="300" height="550" />  </p>
 <p align="center">pour ouvrir la page detail il faut appuyer sur l'image de la Fusée</p>
  <p align="center">
+ <p>ce qui permet d'afficher des donnée complémentaire contenu dans notre fichier , qui detail le type de fusée , l'agence de construction, sa mission, la localisation du pas de tir , l'agence de se pas de tire , la mission de l'emport l'agence a qui appartient l'emport , et l'agence gérant le lancement </p>
 <img src="screenAppli/List_lancement_detail_ULA.jpg" width="300" height="550" />
 <img src="screenAppli/List_lancement_detail_SpaceX.jpg" width="300" height="550" />
 </p>
 <p align="center">pour faire retour , on utilise le retour du portable<p>
-<p>ce qui permet d'afficher des donnée complémentaire contenu dans notre fichier , qui detail le type de fusée , l'agence de construction, sa mission, la localisation du pas de tir , l'agence de se pas de tire , la mission de l'emport l'agence a qui appartient l'emport , et l'agence gérant le lancement </p>
+
