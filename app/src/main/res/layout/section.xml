@@ -3,7 +3,8 @@
     android:layout_width="fill_parent"
     android:layout_height="136dp"
     android:padding="6dip"
-    android:background="@color/Colorlist">
+    android:background="@color/colorlistfond"
+>
 
     <ImageView
         android:id="@+id/fusee_image"
@@ -18,20 +19,20 @@
 
     <TextView
         android:id="@+id/titre_mission"
-        android:layout_width="292dp"
-        android:layout_height="34dp"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
         android:layout_alignWithParentIfMissing="true"
         android:layout_above="@+id/pad_name"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="6dp"
         android:layout_marginBottom="0dp"
         android:layout_toRightOf="@id/fusee_image"
-        android:background="@color/Colorfusee"
         android:gravity="center_vertical"
         android:text="titre_mission"
+        android:textColor="@color/colorlist"
         android:textSize="15dp" />
 
     <TextView
@@ -45,10 +46,10 @@
         android:layout_marginRight="6dp"
         android:layout_marginBottom="1dp"
         android:layout_toRightOf="@+id/fusee_image"
-        android:background="@color/Colorfusee"
+        android:textColor="@color/colorlist"
         android:singleLine="true"
         android:text="agency"
-        android:textSize="12sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/pad_name"
@@ -60,10 +61,10 @@
         android:layout_marginRight="6dp"
         android:layout_marginBottom="0dp"
         android:layout_toRightOf="@id/fusee_image"
-        android:background="@color/Colorfusee"
+        android:textColor="@color/colorlist"
         android:ellipsize="marquee"
         android:singleLine="true"
         android:text="Description"
-        android:textSize="12sp" />
+        android:textSize="16sp" />
 
 </RelativeLayout>
