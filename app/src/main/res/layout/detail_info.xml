@@ -9,34 +9,6 @@
 
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fond_detail" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="420dp"
-        android:layout_height="750dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/colordetailfond"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
-
-
-
-
 
     <TextView
         android:id="@+id/Rocket_titre_section"
@@ -172,7 +144,7 @@
         android:text="rcname"
         android:textColor="@color/colordetail"
         app:layout_constraintEnd_toEndOf="parent"
-
+        android:textSize="12dp"
         app:layout_constraintStart_toEndOf="@+id/fusee_image"
         app:layout_constraintTop_toBottomOf="@+id/rocketfamilyname" />
 
@@ -245,55 +217,65 @@
 
     <TextView
         android:id="@+id/location"
-        android:layout_width="193dp"
-        android:layout_height="33dp"
+        android:layout_width="181dp"
+        android:layout_height="35dp"
         android:layout_marginStart="12dp"
         android:text="location"
         android:textColor="@color/colordetail"
         android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/titre_mission"
         app:layout_constraintTop_toTopOf="@+id/titre_mission" />
 
     <TextView
         android:id="@+id/padname"
-        android:layout_width="187dp"
-        android:layout_height="32dp"
+        android:layout_width="179dp"
+        android:layout_height="30dp"
         android:text="padname"
         android:textColor="@color/colordetail"
         android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="@+id/location"
         app:layout_constraintTop_toBottomOf="@+id/location" />
 
     <TextView
         android:id="@+id/latitude"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:textSize="12dp"
+        android:layout_width="179dp"
+        android:layout_height="24dp"
         android:text="latitude"
         android:textColor="@color/colordetail"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="@+id/padname"
         app:layout_constraintTop_toBottomOf="@+id/padname" />
 
+
     <TextView
         android:id="@+id/longitude"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:textSize="12dp"
+        android:layout_width="177dp"
+        android:layout_height="21dp"
         android:text="longitude"
         android:textColor="@color/colordetail"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/latitude"
         app:layout_constraintTop_toBottomOf="@+id/latitude" />
 
     <TextView
         android:id="@+id/padagencies"
-        android:layout_width="190dp"
-        android:layout_height="28dp"
+        android:layout_width="177dp"
+        android:layout_height="33dp"
         android:text="padagencies"
         android:textColor="@color/colordetail"
         android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/longitude"
         app:layout_constraintTop_toBottomOf="@+id/longitude" />
-
 
     <TextView
         android:id="@+id/missionname"
@@ -335,37 +317,44 @@
 
     <TextView
         android:id="@+id/lspname"
-        android:layout_width="191dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="12dp"
+        android:layout_width="187dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         android:text="lspname"
         android:textColor="@color/colordetail"
         android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/missionname"
         app:layout_constraintTop_toBottomOf="@+id/emport_section" />
 
     <TextView
         android:id="@+id/lspabrrev"
-        android:layout_width="190dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="12dp"
+        android:layout_width="157dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         android:text="lspabrrev"
         android:textColor="@color/colordetail"
         android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/description"
         app:layout_constraintTop_toBottomOf="@+id/lspname" />
 
     <TextView
         android:id="@+id/lspcountrycode"
-        android:layout_width="188dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="168dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
         android:text="lspcountrycode"
         android:textColor="@color/colordetail"
         android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/lspabrrev"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/emport_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toEndOf="@+id/typemission"
         app:layout_constraintTop_toBottomOf="@+id/lspabrrev" />
 
     <TextView
