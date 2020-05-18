@@ -4,8 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/BackSplashScreen"
+    android:background="@drawable/splash_screen_fond"
     tools:context=".SplashScreenActivity">
+
+
+
+
+
 
     <ImageView
         android:id="@+id/image_icon"
@@ -40,4 +45,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar"
         app:layout_constraintVertical_bias="0.172" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
