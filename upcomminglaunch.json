@@ -31,7 +31,7 @@
       "lspabbrev": "EP",
       "lspcountryCode": "CHN",
       "fuseeimage":"https://space.skyrocket.de/img_lau/kuaizhou-1a__1.jpg",
-      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
+      "agencyimage": "https://ih0.redbubble.net/image.972431806.4354/flat,550x550,075,f.u2.jpg"
     },
     {
       "mission": "Atlas V 501 | OTV-6 (X-37B) (USSF-7)",
@@ -123,8 +123,8 @@
       "lspname": "Mitsubishi Heavy Industries",
       "lspabbrev": "MHI",
       "lspcountryCode": "JPN",
-      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
-      "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1200px-NASA_logo.svg.png"
+      "fuseeimage":"https://www.spacelaunchreport.com/h2btf1.jpg",
+      "agencyimage": "https://upload.wikimedia.org/wikipedia/fr/0/08/Logo_JAXA.png"
     },
     {
       "mission": "Falcon 9 Block 5 | SpX-DM2 (Demonstration Mission 2)",
@@ -215,7 +215,7 @@
       "lspname": "Indian Space Research Organization",
       "lspabbrev": "ISRO",
       "lspcountryCode": "IND",
-      "fuseeimage":"https://www.cite-telecoms.com/voy_content/uploads/2018/03/510px-Soyuz_TMA-9_launch-407x613.jpg",
+      "fuseeimage":"https://upload.wikimedia.org/wikipedia/commons/8/82/GSLV-F08_at_the_Umbilical_Tower_of_the_Second_Launch_Pad.jpg",
       "agencyimage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Indian_Space_Research_Organisation_Logo.svg/1059px-Indian_Space_Research_Organisation_Logo.svg.png"
     },
     {
@@ -370,8 +370,8 @@
       "lspname":"Rocket Lab Ltd",
       "lspabbrev":"RL",
       "lspcountryCode":"USA",
-      "fuseeimage":"https://statics.lesinrocks.com/content/thumbs/uploads/2013/11/width-1125-height-612-quality-10/bob.jpg",
-      "agencyimage":"https://statics.lesinrocks.com/content/thumbs/uploads/2013/11/width-1125-height-612-quality-10/bob.jpg"
+      "fuseeimage":"https://cdn.futura-sciences.com/buildsv6/images/wide1920/d/0/e/d0eb720dd5_107362_electron-volinaugural-rocketlab.jpg",
+      "agencyimage":"https://image.freepik.com/free-vector/rocket-lab-logo_18099-52.jpg"
     }
   ]
 
