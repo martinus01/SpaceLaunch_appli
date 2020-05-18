@@ -34,6 +34,7 @@ public class LaunchActivity extends AppCompatActivity {
     private Gson gson;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
