@@ -13,4 +13,7 @@
     <color name="ColorAgency">#005E55</color>
     <color name="ColorSection">#5E1B00</color>
     <color name="colorsectiontxt">#FFFFFF</color>
+    <color name="colorfond">#000000</color>
+    <color name="colorlist">#FFFFFF</color>
+    <color name="colorlistfond">#46000000</color>
 </resources>
